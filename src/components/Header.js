@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-// import SearchIcon from '@material-ui/icons/Search';
+// import Search from '@material-ui/icons/Search';
 const Header = () => {
     return (
         <HeaderContainer>
@@ -12,7 +12,7 @@ const Header = () => {
                     <Button>
                         +Add Learner
                     </Button>
-                    <p>Or</p>
+                    <Div>Or</Div>
                 </HeaderLeft>
                 <HeaderRight>
                     <Input type='text' placeholder="Search by Name" />
@@ -27,7 +27,7 @@ const Header = () => {
                         <Option>Category</Option>
                     </Select>
                     <Search>
-                        {/* <SearchIcon/> */}
+                        {/* <Search/> */}
                         <i class="fas fa-search"></i>
                         <SearchTitle>Search</SearchTitle>
                     </Search>
@@ -55,11 +55,11 @@ display: flex;
 align-items: center;
 justify-content: space-between;
 padding-right: 20px;
-p{
-    text-transform: uppercase;
-    color: grey;
-    font-size: 14px;
-}
+`
+const Div = styled.div`
+text-transform: uppercase;
+color: grey;
+font-size: 14px;
 `
 const Heading = styled.span`
 font-size: 20px;
