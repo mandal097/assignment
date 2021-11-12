@@ -1,14 +1,15 @@
 import React from 'react'
 import Header from './components/Header'
-import Learners from './components/Learners'
-import LearnersProfile from './components/LearnersProfile'
+import Learners from './pages/Learners'
+import UpdateInfo from './pages/UpdateInfo'
 
 const App = () => {
   return (
     <div>
       {/* <Header/>
       <Learners/> */}
-      <LearnersProfile/>
+      {/* <UpdateHeader/> */}
+      <UpdateInfo/>
     </div>
   )
 }

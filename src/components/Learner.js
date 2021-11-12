@@ -1,19 +1,9 @@
 import React from 'react'
 
 import styled from 'styled-components'
-const Learner = ({user}) => {
+const Learner = ({user,handleClick}) => {
     console.log(user);
     return (
-        // <LearnerContainer>
-        //     <Table className="table">
-        //         <Tr>
-        //             <Th>User</Th>
-        //             <Th>Email</Th>
-        //             <Th>Last Login</Th>
-        //             <Th>Case Manager</Th>
-        //             <Th>Tags</Th>
-        //             <Th>Intervention</Th>
-        //         </Tr>
                 <Tr>
                     <Td className="user">
                         <UserWrap>
@@ -33,37 +23,13 @@ const Learner = ({user}) => {
                     <Td className="caseManger">{user.caseManager} </Td>
                     <Td><Span>{user.tags}</Span></Td>
                     <Td >
-                        <InterventionSpan>View Details</InterventionSpan>
+                        <InterventionSpan onClick={handleClick}>View Details</InterventionSpan>
                         <i class="fas fa-ellipsis-v menuIcon"></i>
                     </Td>
                 </Tr>
-        //     </Table>
-        // </LearnerContainer>
     )
 }
 
-// const LearnerContainer = styled.div`
-// width: 1150px;
-// margin: 0px auto;
-// background-color: white;
-// .user{
-//     display: flex;
-//     align-items: center;
-// }
-// .caseManger{
-//     color: #0B35B3 ;
-//     font-size: 13px;
-//     font-weight: bold;
-// }
-// .icon{
-//     font-size: 14px;
-//     color: blue ;
-// }
-// `
-// const Table = styled.table`
-// width: 100%;
-
-// `
 const Usercontact = styled.span`
 color: grey;
 font-size: 12px;
@@ -82,21 +48,18 @@ font-weight: 600;
 const InterventionSpan = styled.span`
 height: 30px;
 width: 70px !important;
-background: #34A770 !important;
+background-color: #34A770 !important;
 border:  none;
 font-weight: bold;
 color: white;
 font-size: 12px;
 font-weight: bold;
 border-radius: 5px;
+cursor: pointer;
+&:hover{
+    background-color:green !important ;
+}
 `
-
-// const Th = styled.th`
-// padding:7px 5px ;
-// color: gray;
-// font-size: 14px;
-// font-weight: 400;
-// `
 const Tr = styled.tr`
 padding:0px 5px ;
 border-bottom: 0.5px solid grey;
