@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import { NavLink } from 'react-router-dom'
+
 const UpdateSidebarLeft = () => {
     return (
         <Container>
@@ -7,33 +9,45 @@ const UpdateSidebarLeft = () => {
             <Wrapper>
                 <Wrap>
                     <Circle className="circle"></Circle>
-                    <CenterSpan className="info">General Info</CenterSpan>
-                    <Arrow className="arrow"><i class="fas fa-arrow-right"></i></Arrow>
+                    <NavLink  className="nav" to="general-info">
+                        <CenterSpan className="info">General Info</CenterSpan>
+                    </NavLink>
+                    <Arrow className="arrow"><i className="fas fa-arrow-right"></i></Arrow>
                 </Wrap>
                 <Wrap>
                     <Circle className="circle"></Circle>
-                    <CenterSpan className="info">Personal Info</CenterSpan>
-                    <Arrow className="arrow"><i class="fas fa-arrow-right"></i></Arrow>
+                    <NavLink className="nav" to="personal-info">
+                        <CenterSpan className="info">Personal Info</CenterSpan>
+                    </NavLink>
+                    <Arrow className="arrow"><i className="fas fa-arrow-right"></i></Arrow>
                 </Wrap>
                 <Wrap>
                     <Circle className="circle"></Circle>
-                    <CenterSpan className="info">Guardian Info</CenterSpan>
-                    <Arrow className="arrow"><i class="fas fa-arrow-right"></i></Arrow>
+                    <NavLink className="nav" to="personal-info">
+                        <CenterSpan className="info">Guardian Info</CenterSpan>
+                    </NavLink>
+                    <Arrow className="arrow"><i className="fas fa-arrow-right"></i></Arrow>
                 </Wrap>
                 <Wrap>
                     <Circle className="circle"></Circle>
-                    <CenterSpan className="info">Clinical Info</CenterSpan>
-                    <Arrow className="arrow"><i class="fas fa-arrow-right"></i></Arrow>
+                    <NavLink className="nav" to="personal-info">
+                        <CenterSpan className="info">Clinical Info</CenterSpan>
+                    </NavLink>
+                    <Arrow className="arrow"><i className="fas fa-arrow-right"></i></Arrow>
                 </Wrap>
                 <Wrap>
                     <Circle className="circle"></Circle>
-                    <CenterSpan className="info">Program Status</CenterSpan>
-                    <Arrow className="arrow"><i class="fas fa-arrow-right"></i></Arrow>
+                    <NavLink className="nav" to="personal-info">
+                        <CenterSpan className="info">Program Status</CenterSpan>
+                    </NavLink>
+                    <Arrow className="arrow"><i className="fas fa-arrow-right"></i></Arrow>
                 </Wrap>
                 <Wrap>
                     <Circle className="circle"></Circle>
-                    <CenterSpan className="info">Tags</CenterSpan>
-                    <Arrow className="arrow"><i class="fas fa-arrow-right"></i></Arrow>
+                    <NavLink className="nav" to="personal-info">
+                        <CenterSpan className="info">Tags</CenterSpan>
+                    </NavLink>
+                    <Arrow className="arrow"><i className="fas fa-arrow-right"></i></Arrow>
                 </Wrap>
             </Wrapper>
         </Container>

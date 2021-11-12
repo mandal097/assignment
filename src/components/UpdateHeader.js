@@ -1,12 +1,17 @@
 import React from 'react'
 import styled from 'styled-components'
+import { NavLink } from 'react-router-dom'
 
 const UpdateHeader = () => {
     return (
         <UpdateHeaderContainer>
             <Wrapper>
                 <Left>
-                    <Icon><i class="fas fa-arrow-left"></i></Icon>
+                    <Icon>
+                        <NavLink className="nav" to="/">
+                            <i className="fas fa-arrow-left"></i>
+                        </NavLink>
+                    </Icon>
                     <UpdateHeading>Update Info</UpdateHeading>
                 </Left>
                 <Right>
@@ -25,6 +30,10 @@ height: 62px;
 background-color: white;
 display: flex;
 align-items: center;
+.nav{
+    color: grey;
+    text-decoration: none;
+}
 `
 const Wrapper = styled.div`
 width: 1150px;
@@ -49,8 +58,6 @@ const Icon = styled.div`
 `
 const Right = styled.div`
 margin-left:auto;
-/* border: 0.5px solid grey; */
-/* padding: ; */
 `
 
 const Navigations = styled.span`

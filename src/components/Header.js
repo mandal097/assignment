@@ -1,4 +1,3 @@
-import React from 'react'
 import styled from 'styled-components'
 // import Search from '@material-ui/icons/Search';
 const Header = () => {
@@ -17,14 +16,13 @@ const Header = () => {
                 <HeaderRight>
                     <Input type='text' placeholder="Search by Name" />
                     <Input type='text' placeholder="Search by Email" />
-                    <Select>
-                        <Option>Category</Option>
+                    <Select name="category">
+                        <Option value="">Category</Option>
                     </Select>
-                    <Select>
-                        <Option >status</Option>
-                        <Option>Category</Option>
-                        <Option>Category</Option>
-                        <Option>Category</Option>
+                    <Select name="active">
+                        <Option value="">Status</Option>
+                        <Option value="active">Active</Option>
+                        <Option value="offline">Offline</Option>
                     </Select>
                     <Search>
                         {/* <Search/> */}
@@ -91,6 +89,9 @@ background-color:#FAF8F8;
 border: .5px solid grey;
 border-radius: 5px;
 outline: none;
+&[placeholder]{
+    font-size: 12px;
+}
 `
 const Select = styled.select`
 border: .5px solid grey;
@@ -104,6 +105,7 @@ margin-right: 10px;
 background-color:#FAF8F8;
 border-radius: 5px;
 color: grey;
+font-size: 12px;
 `
 const Option = styled.option`
 outline: none;

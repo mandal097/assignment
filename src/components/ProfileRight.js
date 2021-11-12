@@ -1,15 +1,19 @@
 import React from 'react'
 import styled from 'styled-components'
+import { NavLink } from 'react-router-dom';
+
 const ProfileRight = () => {
     return (
         <Container>
             <LeftTopSection>
                 <TopStatusTxt>Status</TopStatusTxt>
                 <TopActiveDiv>
-                <i class="fas fa-check-circle active"></i>
+                    <i class="fas fa-check-circle active"></i>
                     active
                 </TopActiveDiv>
-                <TopUpdateBtn>Update Info</TopUpdateBtn>
+                <TopUpdateBtn>
+                    <NavLink className="nav" to="update">Update Info</NavLink>
+                </TopUpdateBtn>
             </LeftTopSection>
             <GeneralInfoDIv>
                 <GeneralInfoTxt>General Info</GeneralInfoTxt>
@@ -86,6 +90,10 @@ const Container = styled.div`
 .active{
     color: blue !important;
 }
+.nav{
+    color: white;
+    text-decoration: none;
+}
 .arrow{
     font-size: 12px;
     margin-right: 2px;
@@ -108,7 +116,7 @@ font-weight: bold;
 font-size: 11px;
 
 `
-const TopActiveDiv= styled.div`
+const TopActiveDiv = styled.div`
 width: 20%;
 height: 24px;
 font-weight: 400;
@@ -122,7 +130,7 @@ align-items: center;
 margin-left: 30px;
 justify-content: space-evenly;
 `
-const TopUpdateBtn= styled.button`
+const TopUpdateBtn = styled.button`
 width: 40%;
 height: 26px;
 border-radius: 5px;
@@ -132,6 +140,9 @@ color: white;
 margin-left: auto;
 background-color: #0B35B3;
 font-weight: 400;
+display: flex;
+align-items: center;
+justify-content: center;
 `
 const GeneralInfoDIv = styled.div`
 width: 100%;
@@ -146,7 +157,7 @@ const GeneralInfoTxt = styled.span`
 font-weight: bolder;
 font-size: 13px;
 `
-const InfoDiv =styled.div`
+const InfoDiv = styled.div`
 display: flex;
 align-items: center;
 justify-content: space-between;
@@ -164,7 +175,7 @@ font-size: 11px;
 font-weight: 600;
 margin-top: 15px;
 `
-const ViewsDiv =styled.div`
+const ViewsDiv = styled.div`
 
 width: 100%;
 padding: 5px 25px;

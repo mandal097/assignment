@@ -1,30 +1,28 @@
-import React from 'react'
-
 import styled from 'styled-components'
-const Learner = ({user,handleClick}) => {
-    console.log(user);
+const Learner = ({user,handleClick }) => {
+
     return (
                 <Tr>
                     <Td className="user">
                         <UserWrap>
-                            <Username >{user.name}</Username>
+                            <Username>{user.name}</Username>
                             <Usercontact>{user.contact}</Usercontact>
                         </UserWrap>
-                        <i class="fas fa-check-circle active"></i>
+                        <i className="fas fa-check-circle active"></i>
                     </Td>
                     <Td >
-                        <i class="fas fa-envelope icon"></i>
+                        <i className="fas fa-envelope icon"></i>
                         <Span>{user.email}</Span>
                     </Td>
                     <Td>
-                        <i class="far fa-user icon"></i>
+                        <i className="far fa-user icon"></i>
                         <Span>{user.lastLogin}</Span>
                     </Td>
                     <Td className="caseManger">{user.caseManager} </Td>
                     <Td><Span>{user.tags}</Span></Td>
                     <Td >
                         <InterventionSpan onClick={handleClick}>View Details</InterventionSpan>
-                        <i class="fas fa-ellipsis-v menuIcon"></i>
+                        <i className="fas fa-ellipsis-v menuIcon"></i>
                     </Td>
                 </Tr>
     )

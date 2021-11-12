@@ -1,19 +1,26 @@
 import React from 'react'
+import { Outlet, useLocation } from 'react-router'
 import styled from 'styled-components'
-import GeneralInfo from '../components/GeneralInfo'
 import UpdateHeader from '../components/UpdateHeader'
 import UpdateSidebarLeft from '../components/UpdateSidebarLeft'
 import UpdateSidebarRight from '../components/UpdateSidebarRight'
+import UpdateGeneralInfo from '../components/UpdateGeneralInfo'
+
 const UpdateInfo = () => {
+    const location = useLocation();
+    const url = location.pathname.split("/")[1]
+    const url2 = location.pathname.split('/')[2]
+    console.log(url);
+    console.log(url2);
     return (
         <>
-        <UpdateHeader/>
+            <UpdateHeader />
             <Container>
                 <UpdateSidebarLeft />
                 <Center>
-                    <GeneralInfo/>
+                    {url2 ? <Outlet/>: url ? <UpdateGeneralInfo /> : <Outlet /> }
                 </Center>
-                <UpdateSidebarRight/>
+                <UpdateSidebarRight />
             </Container>
         </>
     )

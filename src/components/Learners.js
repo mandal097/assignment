@@ -1,13 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import styled from 'styled-components'
 import { learners } from '../DummyData'
-import Learner from '../components/Learner'
-import LearnersFooter from '../components/LearnersFooter'
-import LearnersProfile from '../components/LearnersProfile'
+import Learner from './Learner'
+import LearnersFooter from './LearnersFooter'
+import LearnersProfile from './LearnersProfile'
 
 const Learners = () => {
     const [users, setUsers] = useState([])
-    const [showProfile, setShowProfile] = useState("open")
+    const [showProfile, setShowProfile] = useState("hide")
 
     const handleClick = () => {
         switch (showProfile) {
