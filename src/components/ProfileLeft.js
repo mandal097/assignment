@@ -3,78 +3,78 @@ import styled from 'styled-components'
 const ProfileLeft = () => {
     return (
         <>
-             <Details>
-                            <Img src="https://media.istockphoto.com/photos/woman-standing-on-city-street-at-night-picture-id130406720?b=1&k=20&m=130406720&s=170667a&w=0&h=RfIUneYKwpizKEGwgMCBGwOBCxzTtTdQ1s6MWBw5QlQ=" alt="" />
-                            <Info>
-                                <InfoHeading> Christopher Dias</InfoHeading>
-                                <P>+11 9900998877</P>
-                                <P>James@demoemail.com</P>
-                                <P>DOB:<Span>11th october 2021</Span></P>
-                                <P>Gender:<Span>Female</Span></P>
-                                <P>Adress:<Span>3/8 B 4th Floor,Plot ,Rd ,16/1 Dhaka 1212</Span></P>
-                            </Info>
-                        </Details>
-                        <Records>
-                            <Buttons>
-                                <PeakBtn>
-                                    <Span> Peak</Span>
-                                    <i class="fas fa-check-circle active"></i>
-                                </PeakBtn>
-                                <CongnibleBtn>
-                                    <Span> Cognible</Span>
-                                    <i class="fas fa-check-circle active"></i>
-                                </CongnibleBtn>
-                                <ResearchBtn>
-                                    <Span>Research Participants</Span>
-                                    <i class="fas fa-check-circle notActive"></i>
-                                </ResearchBtn>
-                            </Buttons>
-                            <RecordHeading>Records</RecordHeading>
-                            <Record>
-                                <Circle className="dash"></Circle>
-                                <RecordH>Allergic to:</RecordH>
-                                <RecordP>Meats and Nuts</RecordP>
-                            </Record>
-                            <Record>
-                                <Circle className="dash"></Circle>
-                                <RecordH>Height:</RecordH>
-                                <RecordP>22.3"</RecordP>
-                            </Record>
-                            <Record>
-                                <Circle className="dash"></Circle>
-                                <RecordH>Weight (kg):</RecordH>
-                                <RecordP>90 </RecordP>
-                            </Record>
-                            <Record>
-                                <Circle className="dash"></Circle>
-                                <RecordH>Diagnoses</RecordH>
-                                <RecordP>No results available</RecordP>
-                            </Record>
-                            <Record>
-                                <Circle className="dash"></Circle>
-                                <RecordH>Date of Diagnoses </RecordH>
-                                <RecordP>No results available</RecordP>
-                            </Record>
-                            <Record>
-                                <Circle className="dash"></Circle>
-                                <RecordH>SSN/Adhaar</RecordH>
-                                <RecordP>897645653421</RecordP>
-                            </Record>
-                            <Record>
-                                <Circle className=""></Circle>
-                                <RecordH>Language</RecordH>
-                                <RecordP>English | Hindi</RecordP>
-                            </Record>
-                            <GuardiansInfo>
-                                <GuardiansH>Guardians Info</GuardiansH>
-                                <P>Guardian's Name : <Span>Cristopher</Span></P>
-                                <P>Guardian's cell no. : <Span>+88008866775</Span></P>
-                                <P>Father's Name : <Span>Cristopher</Span></P>
-                                <P>Father's cell no. : <Span>+88008866775</Span></P>
-                                <P>Mother's Name : <Span>Cristopher</Span></P>
-                                <P>Mother's cell no. : <Span>+88008866775</Span></P>
-                            </GuardiansInfo>
-                        </Records>
+            <Details>
+                <Img src="https://media.istockphoto.com/photos/woman-standing-on-city-street-at-night-picture-id130406720?b=1&k=20&m=130406720&s=170667a&w=0&h=RfIUneYKwpizKEGwgMCBGwOBCxzTtTdQ1s6MWBw5QlQ=" alt="" />
+                <Info>
+                    <InfoHeading> Christopher Dias</InfoHeading>
+                    <P>+11 9900998877</P>
+                    <P>James@demoemail.com</P>
+                    <P>DOB:<Span>11th october 2021</Span></P>
+                    <P>Gender:<Span>Female</Span></P>
+                    <P>Adress:<Span>3/8 B 4th Floor,Plot ,Rd ,16/1 Dhaka 1212</Span></P>
+                </Info>
+            </Details>
+            <Records>
+                <Buttons>
+                    <PeakBtn>
+                        <Span> Peak</Span>
+                        <i className="fas fa-check-circle active"></i>
+                    </PeakBtn>
+                    <CongnibleBtn>
+                        <Span> Cognible</Span>
+                        <i className="fas fa-check-circle active"></i>
+                    </CongnibleBtn>
+                    <ResearchBtn>
+                        <Span>Research Participants</Span>
+                        <i className="fas fa-check-circle notActive"></i>
+                    </ResearchBtn>
+                </Buttons>
+                <RecordHeading>Records</RecordHeading>
+                <Record>
+                    <Circle className="dash"></Circle>
+                    <RecordH>Allergic to:</RecordH>
+                    <RecordP>Meats and Nuts</RecordP>
+                </Record>
+                <Record>
+                    <Circle className="dash"></Circle>
+                    <RecordH>Height:</RecordH>
+                    <RecordP>22.3"</RecordP>
+                </Record>
+                <Record>
+                    <Circle className="dash"></Circle>
+                    <RecordH>Weight (kg):</RecordH>
+                    <RecordP>90 </RecordP>
+                </Record>
+                <Record>
+                    <Circle className="dash"></Circle>
+                    <RecordH>Diagnoses</RecordH>
+                    <RecordP>No results available</RecordP>
+                </Record>
+                <Record>
+                    <Circle className="dash"></Circle>
+                    <RecordH>Date of Diagnoses </RecordH>
+                    <RecordP>No results available</RecordP>
+                </Record>
+                <Record>
+                    <Circle className="dash"></Circle>
+                    <RecordH>SSN/Adhaar</RecordH>
+                    <RecordP>897645653421</RecordP>
+                </Record>
+                <Record>
+                    <Circle className=""></Circle>
+                    <RecordH>Language</RecordH>
+                    <RecordP>English | Hindi</RecordP>
+                </Record>
+                <GuardiansInfo>
+                    <GuardiansH>Guardians Info</GuardiansH>
+                    <P>Guardian's Name : <Span>Cristopher</Span></P>
+                    <P>Guardian's cell no. : <Span>+88008866775</Span></P>
+                    <P>Father's Name : <Span>Cristopher</Span></P>
+                    <P>Father's cell no. : <Span>+88008866775</Span></P>
+                    <P>Mother's Name : <Span>Cristopher</Span></P>
+                    <P>Mother's cell no. : <Span>+88008866775</Span></P>
+                </GuardiansInfo>
+            </Records>
         </>
     )
 }
@@ -129,29 +129,29 @@ margin-top: 12px;
 const PeakBtn = styled.div`
 border: .3px solid grey;
 border-radius:10px;
-/* flex: 1; */
 display: flex;
 align-items: center;
 padding: 2px 10px;
 margin: 0px 3px;
+cursor: pointer;
 `
 const CongnibleBtn = styled.div`
 border: .3px solid grey;
 border-radius:10px;
-/* flex: 1; */
 display: flex;
 align-items: center;
 padding: 2px 10px;
 margin: 0px 3px;
+cursor:pointer;
 `
 const ResearchBtn = styled.div`
 border: .3px solid grey;
 border-radius:10px;
-/* flex: 1.6; */
 display: flex;
 align-items: center;
 padding: 2px 10px;
 margin: 0px 3px;
+cursor:pointer;
 `
 const RecordHeading = styled.h3`
 font-size: 14px;

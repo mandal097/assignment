@@ -10,7 +10,7 @@ const UpdateSidebarRight = () => {
                 </TopDiv>
                 <A>How to create a schedule ?</A>
                 <ScheduleBox>
-                    <A className="schedule">How to create a schedule ?</A>
+                    <A className="schedule">How to create a schedule ?<Dash></Dash> </A>
                     <P>Lorem isicing elit. Exercitationem sint minus consequatur aliquid accusamus totam eligendi beatae! Mollitia, ex unde.</P>
                 </ScheduleBox>
                 <A>How to create a schedule ?</A>
@@ -46,7 +46,19 @@ const Icon = styled.div`
 const A = styled.a`
 font-size: 12px;
 color: grey;
+position: relative;
+cursor: pointer;
 `
+const Dash = styled.div`
+width: 16px;
+padding-right: 5px;
+height: 4px;
+background-color:#0B35B3;
+position: absolute;
+top: 8px;
+right: -30px;
+`
+
 const ScheduleBox = styled.div`
 background-color: white;
 width: 100%;

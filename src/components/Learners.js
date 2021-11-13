@@ -5,10 +5,54 @@ import Learner from './Learner'
 import LearnersFooter from './LearnersFooter'
 import LearnersProfile from './LearnersProfile'
 
-const Learners = () => {
+const Learners = ({ name, email, status }) => {
+    // states 
     const [users, setUsers] = useState([])
     const [showProfile, setShowProfile] = useState("hide")
+    const [userPerPage, setUserPerPage] = useState(8)
+    const [currentPage, setCurrentPage] = useState(1)
+    const [filteredUser, setFilteredUser] = useState([]);
+    // const [disabled , setDisabled] = useState(true)
+    // adjusting users rows
+    const [rows, setRows] = useState('')
 
+    // fetching data from dummydata 
+    useEffect(() => {
+        const fetchDummydata = () => {
+            setUsers(learners);
+        }
+        fetchDummydata()
+        // console.log(learners);
+    }, [users])
+    // variables
+    const indexLast = currentPage * userPerPage;
+    const indexFirst = indexLast - userPerPage;
+    const currentUsers = users.slice(indexFirst, indexLast)
+
+
+    // total users in page
+    const totalUsers = users.length;
+    const pages = Math.ceil(totalUsers / userPerPage)
+    console.log(pages);
+
+    // paginatation functions
+    const nextPage = () => {
+        if (currentPage < pages) {
+            setCurrentPage(currentPage + 1)
+        } else {
+            setCurrentPage(pages)
+        }
+
+    }
+    const prevPage = () => {
+        if (currentPage > 1) {
+            setCurrentPage(currentPage - 1)
+        } else {
+            setCurrentPage(1)
+        }
+    }
+
+    // function to handle learners profile
     const handleClick = () => {
         switch (showProfile) {
             case "open":
@@ -22,13 +66,57 @@ const Learners = () => {
         }
     }
 
+
+    // filtering users 
+    // filtering on email and name
     useEffect(() => {
-        setUsers(learners);
-        console.log(learners);
-    }, [])
+        const filtering = () => {
+            const filterByNameArr = currentUsers.filter((user) => {
+                if (email === "") {
+                    return user
+                } else if (user.email.toLowerCase().includes(email.toLowerCase())) {
+                    return user
+                }
+            })
+            const filterByEmailArr = currentUsers.filter((user) => {
+                if (name === "") {
+                    return user
+                } else if (user.name.toLowerCase().includes(name.toLowerCase())) {
+                    return user
+                }
+            })
+
+            if (!name) {
+                setFilteredUser(filterByNameArr)
+            }
+            //  else if (email) {
+            //     setFilteredUser(filterByNameArr)
+            // }
+            else {
+                setFilteredUser(filterByEmailArr)
+            }
+        }
+        filtering()
+    }, [name, email])
+
+    // to find no. of active users
+    const active = currentUsers.filter(u => u.active === true).length;
+    const activeArr = currentUsers.filter(u => u.active === true)
+    const offlineArr = currentUsers.filter(u => u.active === false)
+    useEffect(() => {
+        const filteringActiveUsers = () => {
+            if (status === "active") {
+                setFilteredUser(activeArr)
+            } else if (status === "offline") {
+                setFilteredUser(offlineArr)
+            }
+        }
+        filteringActiveUsers()
+    }, [status])
+    
     return (
         <>
-            <LearnerContainer>
+            <LearnerContainer >
                 <Table className="table">
                     <Tr>
                         <Th>User</Th>
@@ -38,22 +126,42 @@ const Learners = () => {
                         <Th>Tags</Th>
                         <Th>Intervention</Th>
                     </Tr>
-                    {
-                        users.slice(0, 7).map((user) => (
-                            <Learner item key={user.id} user={user} handleClick={handleClick} />
-                        ))
+
+                    {status || name || email ?
+                        filteredUser.map((u => (
+                            <Learner item key={u.id} user={u} handleClick={handleClick} />
+                        )))
+                        :
+                        currentUsers.map((u => (
+                            <Learner item key={u.id} user={u} handleClick={handleClick} />
+                        )))
                     }
                 </Table>
             </LearnerContainer>
-            <LearnersProfile showProfile={showProfile} handleClick={handleClick} />
-            <LearnersFooter />
+            <LearnersProfile showProfile={showProfile} handleClick={handleClick} setShowProfile={setShowProfile} />
+            <LearnersFooter
+                indexFirst={indexFirst}
+                indexLast={indexLast}
+                currentUsers={currentUsers}
+                setCurrentPage={setCurrentPage}
+                currentPage={currentPage}
+                totalUsers={totalUsers}
+                userPerPage={userPerPage}
+                setUserPerPage={setUserPerPage}
+                active={active}
+                nextPage={nextPage}
+                prevPage={prevPage}
+                setRows={setRows}
+                rows={rows}
+            // disabled={disabled}
+            />
         </>
     )
 }
 
 const LearnerContainer = styled.div`
 width: 1150px;
-height: calc( 100vh - 165px);
+min-height: calc( 100vh - 165px);
 margin: 0px auto;
 margin-top: 10px;
 position: relative;
@@ -76,7 +184,6 @@ width: 100%;
 background-color: white;
 
 `
-
 const Th = styled.th`
 padding:7px 5px ;
 color: gray;

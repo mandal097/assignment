@@ -13,14 +13,11 @@ const App = () => {
         <Route path="/*">
           <Route index element={<Home />} />
           <Route path="update/*" element={<UpdateInfo />} >
-            <Route path="general-info" element={<GeneralInfo/>}/>
-            <Route path="personal-info" element={<PersonalInfo/>}/>
-            </Route>
+            <Route path="general-info" element={<GeneralInfo />} />
+            <Route path="personal-info" element={<PersonalInfo />} />
+          </Route>
         </Route>
       </Routes>
-      {/* <Header/>
-      <Learners/> */}
-      {/* <UpdateHeader/> */}
     </div>
   )
 }

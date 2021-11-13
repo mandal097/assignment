@@ -1,30 +1,31 @@
 import styled from 'styled-components'
-const Learner = ({user,handleClick }) => {
+
+const Learner = ({ user, handleClick }) => {
 
     return (
-                <Tr>
-                    <Td className="user">
-                        <UserWrap>
-                            <Username>{user.name}</Username>
-                            <Usercontact>{user.contact}</Usercontact>
-                        </UserWrap>
-                        <i className="fas fa-check-circle active"></i>
-                    </Td>
-                    <Td >
-                        <i className="fas fa-envelope icon"></i>
-                        <Span>{user.email}</Span>
-                    </Td>
-                    <Td>
-                        <i className="far fa-user icon"></i>
-                        <Span>{user.lastLogin}</Span>
-                    </Td>
-                    <Td className="caseManger">{user.caseManager} </Td>
-                    <Td><Span>{user.tags}</Span></Td>
-                    <Td >
-                        <InterventionSpan onClick={handleClick}>View Details</InterventionSpan>
-                        <i className="fas fa-ellipsis-v menuIcon"></i>
-                    </Td>
-                </Tr>
+        <Tr>
+            <Td className="user">
+                <UserWrap>
+                    <Username>{user.name}</Username>
+                    <Usercontact>{user.contact}</Usercontact>
+                </UserWrap>
+                <i className={`fas fa-check-circle ${user.active ? "active" : "notActive"}`}></i>
+            </Td>
+            <Td >
+                <i className="fas fa-envelope icon"></i>
+                <Span>{user.email}</Span>
+            </Td>
+            <Td>
+                <i className="far fa-user icon"></i>
+                <Span>{user.lastLogin}</Span>
+            </Td>
+            <Td className="caseManger">{user.caseManager} </Td>
+            <Td><Span>{user.tags}</Span></Td>
+            <Td >
+                <InterventionSpan onClick={handleClick}>View Details</InterventionSpan>
+                <i className="fas fa-ellipsis-v menuIcon"></i>
+            </Td>
+        </Tr>
     )
 }
 
@@ -68,10 +69,10 @@ padding:0px 5px ;
     color: #0B35B3;
 }
 .active{
-    color:teal ;
+    color: green;
 }
 .notActive{
-    color: lightskyblue;
+    color:lightgreen ;
 }
 `
 const UserWrap = styled.div`

@@ -8,11 +8,11 @@ const LearnersProfile = ({ showProfile, handleClick }) => {
         <>
         {
             showProfile ==="open" &&
-            <Container>
+            <Container >
                 <LearnersProfileContainer>
                     <Wrapper>
                         <Backbtn onClick={handleClick}>
-                        <i class="fas fa-arrow-left"></i>
+                        <i className="fas fa-arrow-left"></i>
                         <BackHeading>Back to home</BackHeading>
                         </Backbtn>
                         <Main>
