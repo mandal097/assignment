@@ -1,10 +1,9 @@
-import React, { useState } from 'react'
-// import Header from '../components/Header'
+import React, { useState  } from 'react'
 import Learners from '../components/Learners'
 import styled from 'styled-components'
+// 
 
 const Home = () => {
-    // const [filter ,setFilter] = useState({})
     const [name, setName] = useState('')
     const [email, setEmail] = useState('')
     const [category, setCategory] = useState('')

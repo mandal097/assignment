@@ -5,6 +5,7 @@ const Learner = ({ user, handleClick }) => {
     return (
         <Tr>
             <Td className="user">
+                <Img src={user.img} alt="" />
                 <UserWrap>
                     <Username>{user.name}</Username>
                     <Usercontact>{user.contact}</Usercontact>
@@ -74,6 +75,12 @@ padding:0px 5px ;
 .notActive{
     color:lightgreen ;
 }
+`
+const Img = styled.img`
+width: 55px;
+height: 55px;
+border-radius: 50%;
+object-fit: cover;
 `
 const UserWrap = styled.div`
 display: flex;

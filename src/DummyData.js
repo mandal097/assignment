@@ -8,7 +8,8 @@ export const learners = [
         caseManager: "LiviaCarder",
         tags: "Alfonso , Health care",
         Intervention:" View Details",
-        active:true
+        active:true,
+        img:"https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
         
     },
     {
@@ -20,7 +21,8 @@ export const learners = [
         caseManager: "LiviaCarder",
         tags: "Alfonso , Health care",
         Intervention:" View Details",
-        active:false
+        active:false,
+        img:"https://images.pexels.com/photos/1542085/pexels-photo-1542085.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
         
     },
     {
@@ -32,7 +34,8 @@ export const learners = [
         caseManager: "Martin Kenter",
         tags: "Alfonso , Health care",
         Intervention:" View Details",
-        active:true
+        active:false,
+        img:"https://images.pexels.com/photos/8190818/pexels-photo-8190818.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
         
     },
     {
@@ -44,7 +47,8 @@ export const learners = [
         caseManager: "Hanna Culhane",
         tags: "Alfonso , Health care",
         Intervention:" View Details",
-        active:false
+        active:false,
+        img:"https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
         
     },
     {
@@ -56,7 +60,8 @@ export const learners = [
         caseManager: "Hayllie lipShutz",
         tags: "Alfonso , Health care",
         Intervention:" View Details",
-        active:false
+        active:false,
+        img:"https://images.pexels.com/photos/810775/pexels-photo-810775.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
         
     },
     {
@@ -68,7 +73,8 @@ export const learners = [
         caseManager: "MIra Tihiff",
         tags: "Alfonso , Health care",
         Intervention:" View Details",
-        active:true
+        active:true,
+        img:"https://images.pexels.com/photos/1278566/pexels-photo-1278566.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
         
     },
     {
@@ -80,7 +86,8 @@ export const learners = [
         caseManager: "Hanna Lunbin",
         tags: "Alfonso , Health care",
         Intervention:" View Details",
-        active:false
+        active:false,
+        img:"https://images.pexels.com/photos/428361/pexels-photo-428361.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
         
     },
     {
@@ -92,7 +99,8 @@ export const learners = [
         caseManager: "Martin Kenter",
         tags: "Alfonso , Health care",
         Intervention:" View Details",
-        active:true
+        active:true,
+        img:"https://images.pexels.com/photos/343717/pexels-photo-343717.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
         
     },
     {
@@ -104,7 +112,8 @@ export const learners = [
         caseManager: "Craig Kenter",
         tags: "Alfonso , Health care",
         Intervention:" View Details",
-        active:false
+        active:false,
+        img:"https://images.pexels.com/photos/343717/pexels-photo-343717.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
     
     },
     {
@@ -116,7 +125,8 @@ export const learners = [
         caseManager: "LiviaCarder",
         tags: "Alfonso , Health care",
         Intervention:" View Details",
-        active:true
+        active:true,
+        img:"https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
     
     },
     {
@@ -128,7 +138,8 @@ export const learners = [
         caseManager: "LiviaCarder",
         tags: "Alfonso , Health care",
         Intervention:" View Details",
-        active:true
+        active:true,
+        img:"https://images.pexels.com/photos/1542085/pexels-photo-1542085.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"   
     
     },
     {
@@ -140,7 +151,8 @@ export const learners = [
         caseManager: "Martin Kenter",
         tags: "Alfonso , Health care",
         Intervention:" View Details",
-        active:true
+        active:true,
+        img:"https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
     
     },
     {
@@ -152,7 +164,8 @@ export const learners = [
         caseManager: "Hanna Culhane",
         tags: "Alfonso , Health care",
         Intervention:" View Details",
-        active:false
+        active:false,
+        img:"https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
     
     },
     {
@@ -164,7 +177,8 @@ export const learners = [
         caseManager: "Hayllie lipShutz",
         tags: "Alfonso , Health care",
         Intervention:" View Details",
-        active:false
+        active:false,
+        img:"https://images.pexels.com/photos/415829/pexels-photo-415829.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
     
     },
     {
@@ -176,7 +190,8 @@ export const learners = [
         caseManager: "MIra Tihiff",
         tags: "Alfonso , Health care",
         Intervention:" View Details",
-        active:false
+        active:false,
+        img:"https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
     
     },
     {
@@ -188,7 +203,8 @@ export const learners = [
         caseManager: "Hanna Lunbin",
         tags: "Alfonso , Health care",
         Intervention:" View Details",
-        active:true
+        active:true,
+        img:"https://images.pexels.com/photos/1542085/pexels-photo-1542085.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
     
     },
     {
@@ -200,7 +216,8 @@ export const learners = [
         caseManager: "Martin Kenter",
         tags: "Alfonso , Health care",
         Intervention:" View Details",
-        active:true
+        active:true,
+        img:"https://images.pexels.com/photos/343717/pexels-photo-343717.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
     
     },
     {
@@ -212,7 +229,8 @@ export const learners = [
         caseManager: "Craig Kenter",
         tags: "Alfonso , Health care",
         Intervention:" View Details",
-        active:true
+        active:true,
+        img:"https://images.pexels.com/photos/1542085/pexels-photo-1542085.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
     
     },
     {
@@ -224,7 +242,8 @@ export const learners = [
         caseManager: "MIra Tihiff",
         tags: "Alfonso , Health care",
         Intervention:" View Details",
-        active:false
+        active:false,
+        img:"https://images.pexels.com/photos/343717/pexels-photo-343717.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
     
     },
     {
@@ -236,7 +255,8 @@ export const learners = [
         caseManager: "Hanna Lunbin",
         tags: "Alfonso , Health care",
         Intervention:" View Details",
-        active:true
+        active:true,
+        img:"https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
     
     },
     {
@@ -248,7 +268,8 @@ export const learners = [
         caseManager: "Martin Kenter",
         tags: "Alfonso , Health care",
         Intervention:" View Details",
-        active:true
+        active:true,
+        img:"https://images.pexels.com/photos/3763188/pexels-photo-3763188.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
     
     },
     {
@@ -260,7 +281,8 @@ export const learners = [
         caseManager: "Craig Kenter",
         tags: "Alfonso , Health care",
         Intervention:" View Details",
-        active:true
+        active:true,
+        img:"https://images.pexels.com/photos/1542085/pexels-photo-1542085.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
     
     }
 ]

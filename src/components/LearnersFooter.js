@@ -9,7 +9,6 @@ const LearnersFooter = ({ totalUsers, active, indexLast, indexFirst, nextPage, p
         e.preventDefault()
         setUserPerPage(rows)
         setUserPerPage(e.target.value);
-        console.log(rows);
     }
 
     return (

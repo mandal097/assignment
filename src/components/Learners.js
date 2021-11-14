@@ -33,7 +33,6 @@ const Learners = ({ name, email, status }) => {
     // total users in page
     const totalUsers = users.length;
     const pages = Math.ceil(totalUsers / userPerPage)
-    console.log(pages);
 
     // paginatation functions
     const nextPage = () => {
@@ -77,6 +76,7 @@ const Learners = ({ name, email, status }) => {
                 } else if (user.email.toLowerCase().includes(email.toLowerCase())) {
                     return user
                 }
+                return false;
             })
             const filterByEmailArr = currentUsers.filter((user) => {
                 if (name === "") {
@@ -84,14 +84,12 @@ const Learners = ({ name, email, status }) => {
                 } else if (user.name.toLowerCase().includes(name.toLowerCase())) {
                     return user
                 }
+                return false;
             })
 
             if (!name) {
                 setFilteredUser(filterByNameArr)
             }
-            //  else if (email) {
-            //     setFilteredUser(filterByNameArr)
-            // }
             else {
                 setFilteredUser(filterByEmailArr)
             }
@@ -113,7 +111,7 @@ const Learners = ({ name, email, status }) => {
         }
         filteringActiveUsers()
     }, [status])
-    
+
     return (
         <>
             <LearnerContainer >
